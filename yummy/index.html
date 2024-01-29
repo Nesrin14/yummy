@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- main style sheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+    
+    
+    <section>
+<div class="container d-flex justify-content-center d-none" id="search-section">
+<div class="  m-3 p-4">
+<input type="text" placeholder="Search By Meal Name"  id="mealInput" class="text-white px-3 bg-transparent w-100 rounded  btn-outline-light"></div>
+<div class="m-3 p-4 "><input type="text" placeholder="Search By First Letter" maxlength="1" class="px-3 text-white rounded btn-outline-light bg-transparent w-100"></div>
+</div>
+</section>
+
+    <section id="side-bar" class="bg-primary position-fixed top-0 bottom-0 d-flex ">
+        <div class="sideBar-inner bg-black text-white d-flex flex-column pe-5 ps-1 pt-2 position-relative ">
+            <a href="#" id="search" class="animate__animated animate__slideInUp">Search</a>
+            <a href="#"id="Categories" class="animate__animated animate__slideInUp">Categories</a>
+            <a href="#"id="Area" class="animate__animated animate__slideInUp">Area</a>
+            <a href="#" id="Ingredients" class="animate__animated animate__slideInUp">Ingredients</a>
+            <a href="#" id="contactUs" class="animate__animated animate__slideInUp">Contact Us</a>
+            <div class="position-absolute bottom-0 start-0 p-3">
+               <a href="" class="icons"><i class="fab fa-facebook-f"></i></a> 
+               <a href="" class="icons"><i class="fab fa-twitter"></i></a>
+               <a href="" class="icons"><i class="fas fa-globe"></i></a>
+                <p class="fw-lighter pt-2">Copyright © 2019 All Rights <br> Reserved.</p>
+            </div>
+        </div>
+        <div class="logo-sideBar d-flex flex-column align-content-center position-relative bg-white p-4">
+            <div>
+                <img src="images/logo.png" class="logo-img" alt="icon">
+            </div>
+            <div class="d-flex position-absolute top-50 start-50 translate-middle justify-content-center align-content-center">
+                  <i class="fas fa-times fs-1 "></i>
+            </div>
+          
+            <div class="position-absolute bottom-0 start-0 d-flex flex-column  ">
+               <a href="" class="icons-a icons "><i class="fas fa-globe fs-4"></i> </a> 
+                <a href="" class="icons-a icons"><i class="fas fa-link fs-4"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <div class="row" id="mealsContainer">
+        </div>
+        <div class="row" id="mealDetailsWrapper">
+        </div>
+    </div>
+    
+<section >
+    <div class="contact-us d-none container m-4 d-flex flex-column align-items-center justify-content-center" id="contact-us-section">
+        <div class="row g-1">
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="form-group mb-0">
+                    <input type="text" id="uname" class="form-control" placeholder="Enter Your Name">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="form-group mb-0">
+                    <input type="email" id="uemail" class="form-control" placeholder="Enter Your Email">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="form-group mb-0">
+                    <input type="number" id="uphone" class="form-control" placeholder="Enter Your Phone">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="form-group mb-0">
+                    <input type="number" id="uage" class="form-control" placeholder="Enter Your Age">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="form-group mb-0">
+                    <input type="text" id="upassword" class="form-control" placeholder="Enter Your Password">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center ">
+                <div class="form-group mb-0">
+                    <input type="text" id="urepassword" class="form-control" placeholder="Re-enter Your Password">
+                </div>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center">
+                <button class="btn btn-outline-danger w-25 text-white ms-2">Submit</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<div class="category container d-flex justify-content-center align-items-center mx-auto">
+    <div id="categories-section" class="row gy-2 gx-3 d-none"></div>
+
+</div>
+
+
+
+<div class="area container d-flex justify-content-center align-items-center mx-auto  vh-100">
+    <div id="area-section" class="row gy-2 gx-3 my-4 d-none">
+        
+    </div>
+</div>
+
+<div class="ingredients container d-flex justify-content-center align-items-center mx-auto  vh-100">
+    <div id="ingredients-section" class="row gy-2 gx-3 my-4 d-none">
+        
+    </div>
+</div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/ingredients.js"></script>
+    <script src="js/area.js" type="module"></script>
+    <script type="module" src="js/search.js"></script>
+    <script type="module" src="js/category.js"></script>
+    <script type="module" src="js/contactus.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
